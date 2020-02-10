@@ -1,0 +1,36 @@
+java_binary(
+    name = "start",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resources = glob(["src/main/resources/**"]),
+    main_class = "src/test/java/com/vmware/sample/Application.java",
+    deps = [
+        "@maven//:org_springframework_boot_spring_boot_starter_web",
+        "@maven//:io_springfox_springfox_swagger_ui",
+        "@maven//:org_projectlombok_lombok",
+    ],
+)
+
+java_library(
+    name = "build",
+    srcs = glob(["src/main/java/**/*.java"]),
+    resources = glob(["src/main/resources/**"]),
+    deps = [
+        "@maven//:org_springframework_boot_spring_boot_starter_web",
+        "@maven//:io_springfox_springfox_swagger_ui",
+        "@maven//:org_projectlombok_lombok",
+    ],
+)
+
+java_test(
+    name = "tests",
+    size = "small",
+    srcs = glob(["src/test/java/**/*.java"]),
+    resources = glob(["src/test/resources/**"]),
+    test_class = "src/test/java/com/vmware/sample/controller/UserControllerTest.java",
+    deps = [
+        ":build",
+        "@maven//:org_springframework_boot_spring_boot_starter_test",
+        "@maven//:junit_junit",
+    ],
+)
+

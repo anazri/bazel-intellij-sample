@@ -1,0 +1,13 @@
+.factorypath
+.classpath
+.settings
+.project
+.vscode
+bazel-*
+target
+.idea
+.ijwb
+*.iws
+*.iml
+*.ipr
+bin
