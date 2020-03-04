@@ -39,26 +39,26 @@ public class UserControllerTest {
                 .andExpect(status().isOk());
     }
 
-    @Test
-    public void createUserTest() throws Exception {
+//    @Test
+//    public void createUserTest() throws Exception {
 //        mvc.perform(post("/api/v1/user")
 //                .param("id", "4")
 //                .param("name", "Black"))
 //                .andExpect(status().isOk());
-    }
-
-    @Test
-    public void updateUserTest() throws Exception {
+//    }
+//
+//    @Test
+//    public void updateUserTest() throws Exception {
 //        mvc.perform(put("/api/v1/user")
 //                .param("id", "4")
 //                .param("name", "Black")
 //                .param("age", "32"))
 //                .andExpect(status().isOk());
-    }
-
-    @Test
-    public void deleteUserTest() throws Exception {
-        mvc.perform(delete(String.format("/api/v1/user/%d", 0)))
-                .andExpect(status().isOk());
-    }
+//    }
+//
+//    @Test
+//    public void deleteUserTest() throws Exception {
+//        mvc.perform(delete(String.format("/api/v1/user/%d", 0)))
+//                .andExpect(status().isOk());
+//    }
 }

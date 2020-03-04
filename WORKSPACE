@@ -16,9 +16,20 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "org.springframework.boot:spring-boot-starter-web:5.2.3.RELEASE",
-        "org.springframework.boot:spring-boot-starter-test:5.2.3.RELEASE",
-        "io.springfox:springfox-swagger-ui:2.7",
+        "org.springframework.boot:spring-boot-autoconfigure:2.2.5.RELEASE",
+        "org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE",
+        "org.springframework.boot:spring-boot-starter-test:2.2.5.RELEASE",
+        "org.springframework.boot:spring-boot-test:2.2.5.RELEASE",
+        "org.springframework.boot:spring-boot:2.2.5.RELEASE",
+        "org.springframework:spring-context:5.2.4.RELEASE",
+        "org.springframework:spring-test:5.2.4.RELEASE",
+        "org.springframework:spring-web:5.2.4.RELEASE",
+        "io.springfox:springfox-spring-web:2.9.2",
+        "io.springfox:springfox-swagger-ui:2.9.2",
+        "io.springfox:springfox-swagger2:2.9.2",
+        "io.springfox:springfox-core:2.9.2",
+        "io.swagger:swagger-annotations:1.6.0",
+        "io.springfox:springfox-spi:2.9.2",
         "org.projectlombok:lombok:1.18.12",
         "junit:junit:4.12",
     ],

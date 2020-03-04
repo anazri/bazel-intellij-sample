@@ -46,7 +46,7 @@ Build a sample project for Spring Boot based on the bazel tool in IntelliJ integ
 ![Install the Bazel plugin](images/InteillJ-Bazel-02.png)
 ![Restart InteillJ IDEA](images/InteillJ-Bazel-03.png)
 
-### Import project from Bazel
+### Import project from Bazel in InteillJ
 
 ![Start InteillJ IDEA](images/InteillJ-Bazel-04.png)
 ![Select an existing Bazel workspace](images/InteillJ-Bazel-05.png)
@@ -55,4 +55,12 @@ Build a sample project for Spring Boot based on the bazel tool in IntelliJ integ
 
 ### Build the project using Bazel in IntelliJ
 
+![Configuration Bazel to run](images/InteillJ-Bazel-08.png)
+![Start sample project](images/InteillJ-Bazel-09.png)
+![Configuration Bazel to build](images/InteillJ-Bazel-10.png)
+![Build sample project](images/InteillJ-Bazel-11.png)
+![Configuration Bazel to test](images/InteillJ-Bazel-12.png)
+![Test sample project](images/InteillJ-Bazel-13.png)
+
+### Resources related to the sample project
 * [Swagger-UI](http://localhost:8080/swagger-ui.html)

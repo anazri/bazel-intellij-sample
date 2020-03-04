@@ -2,10 +2,19 @@ java_binary(
     name = "start",
     srcs = glob(["src/main/java/**/*.java"]),
     resources = glob(["src/main/resources/**"]),
-    main_class = "src/test/java/com/vmware/sample/Application.java",
+    main_class = "com.vmware.sample.Application",
     deps = [
+        "@maven//:org_springframework_boot_spring_boot_autoconfigure",
         "@maven//:org_springframework_boot_spring_boot_starter_web",
+        "@maven//:org_springframework_boot_spring_boot",
+        "@maven//:org_springframework_spring_context",
+        "@maven//:org_springframework_spring_web",
+        "@maven//:io_springfox_springfox_spring_web",
         "@maven//:io_springfox_springfox_swagger_ui",
+        "@maven//:io_springfox_springfox_swagger2",
+        "@maven//:io_swagger_swagger_annotations",
+        "@maven//:io_springfox_springfox_core",
+        "@maven//:io_springfox_springfox_spi",
         "@maven//:org_projectlombok_lombok",
     ],
 )
@@ -15,22 +24,32 @@ java_library(
     srcs = glob(["src/main/java/**/*.java"]),
     resources = glob(["src/main/resources/**"]),
     deps = [
+        "@maven//:org_springframework_boot_spring_boot_autoconfigure",
         "@maven//:org_springframework_boot_spring_boot_starter_web",
+        "@maven//:org_springframework_boot_spring_boot",
+        "@maven//:org_springframework_spring_context",
+        "@maven//:org_springframework_spring_web",
+        "@maven//:io_springfox_springfox_spring_web",
         "@maven//:io_springfox_springfox_swagger_ui",
+        "@maven//:io_springfox_springfox_swagger2",
+        "@maven//:io_swagger_swagger_annotations",
+        "@maven//:io_springfox_springfox_core",
+        "@maven//:io_springfox_springfox_spi",
         "@maven//:org_projectlombok_lombok",
     ],
 )
 
 java_test(
-    name = "tests",
+    name = "UserControllerTest",
     size = "small",
     srcs = glob(["src/test/java/**/*.java"]),
     resources = glob(["src/test/resources/**"]),
-    test_class = "src/test/java/com/vmware/sample/controller/UserControllerTest.java",
+    test_class = "com.vmware.sample.controller.UserControllerTest",
     deps = [
         ":build",
         "@maven//:org_springframework_boot_spring_boot_starter_test",
+        "@maven//:org_springframework_boot_spring_boot_test",
+        "@maven//:org_springframework_spring_test",
         "@maven//:junit_junit",
     ],
 )
-
